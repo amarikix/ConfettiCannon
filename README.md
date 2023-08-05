@@ -1,6 +1,6 @@
 # ConfettiCannon 
 
-to use this ConfettiCannon pakeage ⬇️
+to use this ConfettiCannon pakeage →
         Button(action: {
             count += 1
         })  {

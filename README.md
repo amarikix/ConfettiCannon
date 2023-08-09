@@ -1,6 +1,7 @@
 # ConfettiCannon 
 
-to use this ConfettiCannon pakeage put this in your view. you alo need i changing state varible:
+to use this ConfettiCannon pakeage put this in your view. you alos need changing state varible
+so computer know when to active the confetti cannon:
 
     @State var count = 0
         Button(action: {

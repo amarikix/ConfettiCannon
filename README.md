@@ -1,6 +1,7 @@
 # ConfettiCannon 
 
-to use this ConfettiCannon pakeage →
+to use this ConfettiCannon pakeage put this in your view. you alo need i changing state varible
+    @State var count = 0
         Button(action: {
             count += 1
         })  {

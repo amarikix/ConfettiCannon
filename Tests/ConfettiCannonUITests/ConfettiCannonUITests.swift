@@ -9,7 +9,11 @@ final class ConfettiCannonUITests: XCTestCase {
     
     func testExample() {
         if #available(iOS 14.0, *) {
-            confettiCannonUI.ConfettiCannon(count:$count, confettiConfig: ConfettiConfig)
+            if #available(iOS 15.0, *) {
+                ConfettiCannonUI.ConfettiCannon(count:$count)
+            } else {
+                // Fallback on earlier versions
+            }
         } else {
             // Fallback on earlier versions
         }

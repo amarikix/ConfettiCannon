@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+@available(macOS 10.15, *)
 @available(iOS 13.0, *)
 public extension View {
     
@@ -46,6 +47,7 @@ public extension View {
     ///   - repetitions: number of repetitions of the explosion
     ///   - repetitionInterval: duration between the repetitions
     
+    @available(macOS 10.15, *)
     @available(iOS 15.0, *)
     @ViewBuilder func confettiCannon(
         count: Binding<Int>,

@@ -1,7 +1,7 @@
 # ConfettiCannon 
 
 to use this ConfettiCannon pakeage put this code in your view. you alos need a changing state varible
-so computer know when to active the confetti cannon. In the this instace the changing state is zero and when the count goes up one confetti cannon is active (you need the changing state count unless it won't work) 
+so computer know when to active the confetti cannon. In the this instace the changing state is zero and when the count goes up one confetti cannon is active (you need the changing state count unless it won't work) and make sure you import ConfettiCannonUI in your project :)
     
     @State var count = 0
         Button(action: {

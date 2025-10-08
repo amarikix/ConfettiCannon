@@ -47,7 +47,7 @@ public extension View {
     ///   - repetitions: number of repetitions of the explosion
     ///   - repetitionInterval: duration between the repetitions
     
-    @available(macOS 10.15, *)
+    @available(macOS 11.0, *)
     @available(iOS 15.0, *)
     @ViewBuilder func confettiCannon(
         count: Binding<Int>,

@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-@available(macOS 10.15, *)
+@available(macOS 11.0, *)
 @available(iOS 13.0, *)
 public extension View {
     

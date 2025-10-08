@@ -8,7 +8,7 @@
 //import Foundation
 import SwiftUI
 
-@available(iOS 15.0, *)
+@available(iOS 15.0, macOS 11.0, *)
 public enum ConfettiType:CaseIterable, Hashable {
     
     public enum Shape {
@@ -45,7 +45,7 @@ public enum ConfettiType:CaseIterable, Hashable {
     }
 }
 
-@available(iOS 14.0, *)
+@available(iOS 14.0, macOS 11.0, *)
 public struct ConfettiCannon: View {
     @Binding var count:Int
     @StateObject  var confettiConfig:confettiConfig
@@ -69,7 +69,7 @@ public struct ConfettiCannon: View {
     ///   - radius: explosion radius
     ///   - repetitions: number of repetitions of the explosion
     ///   - repetitionInterval: duration between the repetitions
-    @available(iOS 15.0, *)
+    @available(iOS 15.0, macOS 11.0, *)
     public init(count:Binding<Int>,
                               num:Int = 20,
                               confettis:[ConfettiType] = ConfettiType.allCases,
@@ -142,7 +142,7 @@ public struct ConfettiCannon: View {
     }
 }
 
-@available(iOS 14.0, *)
+@available(iOS 14.0, macOS 11.0, *)
 struct ConfettiContainer: View {
     @Binding var finishedAnimationcount:Int
     @StateObject var confettiConfig:confettiConfig
@@ -166,7 +166,7 @@ struct ConfettiContainer: View {
     }
 }
 
-@available(iOS 14.0, *)
+@available(iOS 14.0, macOS 11.0, *)
 struct ConfettiView: View{
     @State var location:CGPoint = CGPoint(x: 0, y: 0)
     @State var opacity:Double = 0.0
@@ -241,7 +241,7 @@ struct ConfettiView: View{
     
 }
 
-@available(iOS 14.0, *)
+@available(iOS 14.0, macOS 11.0, *)
 struct ConfettiAnimationView: View {
     @State var shape: AnyView
     @State var color: Color
@@ -272,7 +272,7 @@ struct ConfettiAnimationView: View {
     }
 }
 
-@available(iOS 14.0, *)
+@available(iOS 14.0, macOS 11.0, *)
 class confettiConfig: ObservableObject {
     internal init(num: Int, shapes: [AnyView], colors: [Color], confettiSize: CGFloat, rainHeight: CGFloat, fadesOut: Bool, opacity: Double, openingAngle:Angle, closingAngle:Angle, radius:CGFloat, repetitions:Int, repetitionInterval:Double) {
         self.num = num
